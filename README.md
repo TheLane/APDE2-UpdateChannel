@@ -1,9 +1,12 @@
-# APDE2 update feed
+# APDE2 public update feed (test builds)
 
-This public repository contains **only downloadable APDE2 test builds** and their static update manifest. The APDE2 source repository remains private.
+Only APKs and manifest are published here. The APDE2 **source** repository `TheLane/APDE2` stays **private**.
 
-Current test build: 0.2.5 (`versionCode` 115), debug-signed. The APK is for testing the HTTPS update checker, not a production release. Use the matching debug-signed baseline app to install it as an update.
+Current candidate: **APDE2 0.2.6, versionCode 116**, signed with the development debug key and intended to update the Xiaomi test installation running **0.2.5, code115**. Older APKs are retained for archival purposes.
 
-Feed: `https://raw.githubusercontent.com/TheLane/APDE2-UpdateChannel/main/`
+Configure this feed in APDE2 → Settings → Updates (already embedded as default):
+`https://raw.githubusercontent.com/TheLane/APDE2-UpdateChannel/main/`
 
-These artifacts are deliberately publicly downloadable. No source repository, local configuration or private sketch data is published here.
+Check updates, choose browser download, and confirm installation using the Android system package installer. Debug-signed test builds are **not production releases**.
+
+The updater checks only same-folder HTTPS APK URLs and requires the expected package name. No user sketches, source code, signing keys or credentials are included.
